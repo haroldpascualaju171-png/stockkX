@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Chewi Market</title>
+
+<style>
+body{
+    margin:0;
+    font-family:Arial, sans-serif;
+    background:#0f0f0f;
+    color:white;
+}
+
+/* Barra superior verde */
+.top-bar{
+    background:#9bc3a7;
+    color:black;
+    padding:10px;
+    text-align:center;
+    font-weight:bold;
+}
+
+/* Header */
+header{
+    background:black;
+    padding:20px 40px;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+}
+
+.logo{
+    font-size:28px;
+    font-weight:bold;
+    color:#9bc3a7;
+}
+
+/* Banner */
+.banner{
+    margin:20px 40px;
+    background:#9bc3a7;
+    height:250px;
+    border-radius:15px;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    padding:20px;
+}
+
+.banner img{
+    height:220px;
+}
+
+.banner-text{
+    color:black;
+}
+
+.banner-text h1{
+    margin:0;
+}
+
+/* Productos */
+.section{
+    padding:20px 40px;
+}
+
+.product-grid{
+    display:flex;
+    gap:20px;
+    overflow-x:auto;
+}
+
+.card{
+    background:#1a1a1a;
+    padding:15px;
+    border-radius:15px;
+    min-width:220px;
+    cursor:pointer;
+    transition:0.3s;
+}
+
+.card:hover{
+    transform:scale(1.05);
+}
+
+.card img{
+    width:100%;
+    border-radius:10px;
+}
+
+.price{
+    font-weight:bold;
+    margin-top:5px;
+}
+
+</style>
+</head>
+<body>
+
+<!-- 🎵 Música -->
+<audio id="music" loop>
+<source src="cancion.mp3" type="audio/mpeg">
+</audio>
+
+<script>
+window.addEventListener("click", function(){
+    document.getElementById("music").play();
+});
+</script>
+
+<div class="top-bar">
+Bienvenido a Chewi Market
+</div>
+
+<header>
+<div class="logo">CHEWIX</div>
+<div>Login | Sign Up</div>
+</header>
+
+<!-- Banner principal -->
+<div class="banner">
+<div class="banner-text">
+<h1></h1>
+<p></p>
+</div>
+
+
+<img src="imagen.png" style="width:100%; height:100%; object-fit:cover;">
+</div>
+
+<!-- Productos -->
+<div class="section">
+<h2>Productos Destacados</h2>
+
+<div class="product-grid">
+
+<div class="card">
+<img src="foto.png">
+<p>adidas Yeezy Slide</p>
+<div class="price">Q700.00</div>
+</div>
+
+<div class="card">
+<img src="foto1.png">
+<p>Travis Scott Velvet Brown</p>
+<div class="price">Q2,500.00</div>
+</div>
+
+<div class="card">
+<img src="foto2.png">
+<p>Jordan 4 Retro SB</p>
+<div class="price">Q2,360.00</div>
+</div>
+
+<div class="card">
+<img src="foto3.png">
+<p>Bad Bunny Paso Fino</p>
+<div class="price">Q2,890.00</div>
+</div>
+
+<div class="card">
+<img src="foto4.png">
+<p>Jordan 1 Retro High</p>
+<div class="price">Q5,260</div>
+</div>
+
+</div>
+</div>
+
+</body>
+</html>
