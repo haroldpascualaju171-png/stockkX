@@ -3,171 +3,275 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Chewi Market</title>
+<title>Nuestra Historia 💖</title>
 
 <style>
-body{
-    margin:0;
-    font-family:Arial, sans-serif;
-    background:#0f0f0f;
-    color:white;
+body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background: linear-gradient(135deg, #ff758c, #ff7eb3);
+    color: white;
+    text-align: center;
 }
 
-/* Barra superior verde */
-.top-bar{
-    background:#9bc3a7;
-    color:black;
-    padding:10px;
-    text-align:center;
-    font-weight:bold;
+/* NAV */
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    background: rgba(0,0,0,0.3);
+    padding: 12px;
 }
 
-/* Header */
-header{
-    background:black;
-    padding:20px 40px;
-    display:flex;
-    align-items:center;
-    justify-content:space-between;
+nav button {
+    background: #ff4d6d;
+    border: none;
+    padding: 10px;
+    border-radius: 12px;
+    color: white;
+    cursor: pointer;
 }
 
-.logo{
-    font-size:28px;
-    font-weight:bold;
-    color:#9bc3a7;
+/* SECCIONES */
+.section {
+    display: none;
+    padding: 20px;
+}
+.active {
+    display: block;
 }
 
-/* Banner */
-.banner{
-    margin:20px 40px;
-    background:#9bc3a7;
-    height:250px;
-    border-radius:15px;
-    display:flex;
-    align-items:center;
-    justify-content:space-between;
-    padding:20px;
+/* INICIO */
+.contenedor-inicio {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
 }
 
-.banner img{
-    height:220px;
+/* FOTO */
+.card-foto img {
+    width: 180px;
+    height: 180px;
+    border-radius: 20px;
+    object-fit: cover;
 }
 
-.banner-text{
-    color:black;
+/* MENSAJE */
+.card-mensaje {
+    background: rgba(255,255,255,0.2);
+    padding: 15px;
+    border-radius: 20px;
 }
 
-.banner-text h1{
-    margin:0;
+/* ALBUM */
+.album {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 25px;
 }
 
-/* Productos */
-.section{
-    padding:20px 40px;
+.foto {
+    background: white;
+    padding: 15px;
+    border-radius: 15px;
+    width: 220px;
+    color: black;
 }
 
-.product-grid{
-    display:flex;
-    gap:20px;
-    overflow-x:auto;
+.foto img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
 }
 
-.card{
-    background:#1a1a1a;
-    padding:15px;
-    border-radius:15px;
-    min-width:220px;
-    cursor:pointer;
-    transition:0.3s;
+/* RECUERDOS */
+.recuerdos-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
 }
 
-.card:hover{
-    transform:scale(1.05);
+.recuerdo {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    background: rgba(255,255,255,0.2);
+    padding: 15px;
+    border-radius: 20px;
 }
 
-.card img{
-    width:100%;
-    border-radius:10px;
+.recuerdo img {
+    width: 120px;
+    height: 120px;
+    border-radius: 15px;
+    object-fit: cover;
 }
 
-.price{
-    font-weight:bold;
-    margin-top:5px;
+.texto {
+    text-align: left;
 }
 
+/* CORAZONES */
+.corazon {
+    position: fixed;
+    font-size: 20px;
+    animation: flotar 5s linear infinite;
+}
+
+@keyframes flotar {
+    0% {transform: translateY(100vh);}
+    100% {transform: translateY(-10vh);}
+}
 </style>
 </head>
+
 <body>
 
-<!-- 🎵 Música -->
-<audio id="music" loop>
-<source src="cancion.mp3" type="audio/mpeg">
+<h1>💗 Querida Zareth 💗</h1>
+
+<nav>
+    <button onclick="mostrar('inicio')">Inicio</button>
+    <button onclick="mostrar('album')">Álbum</button>
+    <button onclick="mostrar('recuerdos')">💌 Recuerdos</button>
+    <button onclick="spotify()">Playlist 🎧</button>
+</nav>
+
+<!-- INICIO -->
+<div id="inicio" class="section active">
+    <div class="contenedor-inicio">
+
+        <div class="card-foto">
+            <img id="fotoCambiante" src="foto.jpg">
+        </div>
+
+        <div class="card-mensaje">
+            <h2>💗 Querida Zareth 💗</h2>
+            <p>
+                Desde que llegaste a mi vida, todo cambió de una manera que no sabía que necesitaba… todo se volvió más bonito, más especial y lleno de sentido.
+Hay algo en ti que logra hacer que incluso los días más simples se sientan diferentes, como si todo tuviera un brillo distinto.
+
+A veces no encuentro las palabras exactas para explicar lo que siento, porque es algo que va más allá de lo que puedo decir… pero sí sé que cada momento contigo vale la pena, que cada sonrisa tuya ilumina mi día y que tu presencia hace que todo sea mejor.
+
+Y aunque no podamos vernos todos los días por la distancia, quiero que sepas que siempre estás en mi mente. No hay un solo día en el que no piense en ti, en tus ojos, en tu sonrisa… en todo lo que eres.
+Cada día espero con ilusión el momento en el que podamos volver a vernos, porque para mí, estar contigo es uno de los momentos más bonitos que existen.
+
+Poco a poco te has convertido en alguien muy importante para mí, alguien que ocupa un lugar especial en mi corazón. Y aunque tal vez no lo diga siempre, quiero que sepas que me importas muchísimo y que todo esto que siento por ti es completamente sincero 💕✨ Te quiero mucho ojitos bonitos 💗✨
+            </p>
+        </div>
+
+    </div>
+</div>
+
+<!-- ALBUM -->
+<div id="album" class="section">
+    <h2>📸 Nuestros recuerdos</h2>
+
+    <div class="album">
+        <div class="foto">
+            <img src="foto7.jpg">
+            <p>Una de mis fotos favoritas 💕</p>
+        </div>
+
+        <div class="foto">
+            <img src="foto6.jpg">
+            <p>Nuestra primera salida 💗✨</p>
+        </div>
+
+        <div class="foto">
+            <img src="foto8.jpg">
+            <p>Nuestra última salida 💖</p>
+        </div>
+    </div>
+</div>
+
+<!-- RECUERDOS -->
+<div id="recuerdos" class="section">
+    <h2>💌 Nuestros momentos especiales</h2>
+
+    <div class="recuerdos-container">
+
+        <div class="recuerdo">
+            <img src="foto6.jpg">
+            <div class="texto">
+                <p>Como olvidar la primera vez que nos vimos, esa vez estaba muy nervioso y a la vez feliz de poder conocerte en persona, sin saber que esa vez iba a quedar 
+                completamnente enamorado de ti. 💖 </p>
+            </div>
+        </div>
+
+        <div class="recuerdo">
+            <img src="foto9.jpg">
+            <div class="texto">
+                <p>Aunque no lo creas cada una de las fotos que me envias son especiales para mi ya que es la unica forma de poder verte y sentir que estas cerca de mi y a demas tus fotos me hacen reir con los filtros que le colocas jsjjs i love you my girl 💕</p>
+            </div>
+        </div>
+
+        <div class="recuerdo">
+            <img src="foto8.jpg">
+            <div class="texto">
+                <p>Uno de los momentos que nunca voy a olvidar es la ultima vez que nos vimos ya que esa fue la ultima vez que te pude ver a esos ojitos lindos que tienes, poder darte un abrazo y decirte lo mucho que te quiero, ojalá pronto nos podamos volver a ver y estar aunque sea 5 minutos juntos✨</p>
+            </div>
+        </div>
+
+        <div class="recuerdo">
+            <img src="foto7.jpg">
+            <div class="texto">
+                <p>Ese día también supe que mi lugra favorito era estar junto a ti agarrados de la mano, creeme que por un momento todo fue solo alegria y paz ya que estar contigo es mi lugra favorito y espero pueda ser asi por mucho más 💗</p>
+            </div>
+        </div>
+
+        <div class="recuerdo">
+            <img src="foto5.jpg">
+            <div class="texto">
+                <p>Simplemente eres una niña linda no solo fisicamente sino en todos los aspectos posibles eres esa niña la cual creo que Dios hizo para mi ya que siento que tu eres esa oracion que le pido a Dios cada noche, quiero que sepas que te amo y espero algun día podamos tener algo bonito ly 💗</p>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<!-- MUSICA -->
+<audio id="musica" loop>
+    <source src="Recuerdo.mp3">
 </audio>
 
 <script>
-window.addEventListener("click", function(){
-    document.getElementById("music").play();
+
+function mostrar(seccion){
+    document.querySelectorAll(".section").forEach(s => s.classList.remove("active"));
+    document.getElementById(seccion).classList.add("active");
+}
+
+function spotify(){
+    window.open("https://open.spotify.com/playlist/039UTOJloQ4JsGNi8YrWPk");
+}
+
+document.body.addEventListener("click", () => {
+    document.getElementById("musica").play();
 });
+
+// corazones
+function crearCorazon() {
+    let c = document.createElement("div");
+    c.className = "corazon";
+    c.innerText = "💖";
+    c.style.left = Math.random() * 100 + "vw";
+    document.body.appendChild(c);
+    setTimeout(()=>c.remove(),5000);
+}
+setInterval(crearCorazon,600);
+
+// fotos que cambian
+let fotos = ["foto5.jpg","foto2.jpg","foto4.jpg","foto.jpg"];
+let i = 0;
+
+setInterval(()=>{
+    i = (i+1)%fotos.length;
+    document.getElementById("fotoCambiante").src = fotos[i];
+},5000);
+
 </script>
-
-<div class="top-bar">
-Bienvenido a Chewi Market
-</div>
-
-<header>
-<div class="logo">CHEWIX</div>
-<div>Login | Sign Up</div>
-</header>
-
-<!-- Banner principal -->
-<div class="banner">
-<div class="banner-text">
-<h1></h1>
-<p></p>
-</div>
-
-
-<img src="imagen.png" style="width:100%; height:100%; object-fit:cover;">
-</div>
-
-<!-- Productos -->
-<div class="section">
-<h2>Productos Destacados</h2>
-
-<div class="product-grid">
-
-<div class="card">
-<img src="foto.png">
-<p>adidas Yeezy Slide</p>
-<div class="price">Q700.00</div>
-</div>
-
-<div class="card">
-<img src="foto1.png">
-<p>Travis Scott Velvet Brown</p>
-<div class="price">Q2,500.00</div>
-</div>
-
-<div class="card">
-<img src="foto2.png">
-<p>Jordan 4 Retro SB</p>
-<div class="price">Q2,360.00</div>
-</div>
-
-<div class="card">
-<img src="foto3.png">
-<p>Bad Bunny Paso Fino</p>
-<div class="price">Q2,890.00</div>
-</div>
-
-<div class="card">
-<img src="foto4.png">
-<p>Jordan 1 Retro High</p>
-<div class="price">Q5,260</div>
-</div>
-
-</div>
-</div>
 
 </body>
 </html>
